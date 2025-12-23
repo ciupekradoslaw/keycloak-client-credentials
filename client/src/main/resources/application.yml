@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: client
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: demo-app
+            client-secret: 2WUVuiFtGqVXN3j7WxpD2gAxtwBX1JiS
+            authorization-grant-type: client_credentials
+        provider:
+          keycloak:
+            token-uri: http://localhost:8080/realms/demo/protocol/openid-connect/token
+
+server:
+  port: 8082
+
+
